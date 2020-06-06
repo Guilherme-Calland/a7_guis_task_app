@@ -1,3 +1,4 @@
+import 'package:a7_guis_task_app/widgets/gui.dart';
 import 'package:flutter/material.dart';
 
 class TaskScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class TaskScreen extends StatelessWidget {
     return Expanded(
       child: Container(
         padding: EdgeInsets.only(
-          left: 20
+          left: 22
         ),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -28,14 +29,7 @@ class TaskScreen extends StatelessWidget {
                 },
               )
             ),
-            Transform.translate(
-              offset: Offset(-52, 170),
-              child: Transform.scale
-              (
-                scale: 2,
-                child: Image.asset('assets/gui.left.png')
-              ),
-            ),
+            Gui(),
           ],
         ),
       )

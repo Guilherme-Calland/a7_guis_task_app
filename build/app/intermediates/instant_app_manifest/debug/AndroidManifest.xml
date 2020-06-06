@@ -25,7 +25,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="a7_guis_task_app" >
+        android:label="Tasks" >
         <activity
             android:name="com.guilhermecallandprojects.a7_guis_task_app.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
