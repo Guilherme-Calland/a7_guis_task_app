@@ -7,7 +7,7 @@ class TaskScreen extends StatelessWidget {
     return Expanded(
       child: Container(
         padding: EdgeInsets.only(
-          top: 10, left: 20
+          left: 20
         ),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -16,7 +16,7 @@ class TaskScreen extends StatelessWidget {
             topRight: Radius.circular(20)
           )
         ),
-        child: Column(
+        child: Row(
           children: <Widget>[
             Expanded(
               child: ListView.builder(
@@ -27,7 +27,15 @@ class TaskScreen extends StatelessWidget {
                   );
                 },
               )
-            )
+            ),
+            Transform.translate(
+              offset: Offset(-52, 170),
+              child: Transform.scale
+              (
+                scale: 2,
+                child: Image.asset('assets/gui.left.png')
+              ),
+            ),
           ],
         ),
       )
