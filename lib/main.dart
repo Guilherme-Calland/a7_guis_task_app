@@ -1,23 +1,15 @@
+import 'package:a7_guis_task_app/resources/resources.dart';
+import 'package:a7_guis_task_app/screens/home.screen.dart';
 import 'package:flutter/material.dart';
 
 main(){
   runApp(MaterialApp(
-    home: Home(),
+    theme: ThemeData(
+      cursorColor: guisTaskAppTheme,
+      primarySwatch: Colors.purple
+    ),
+    debugShowCheckedModeBanner: false,
+    home: HomeScreen(),
   ));
 }
 
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('oi')
-      )
-    );
-  }
-}
