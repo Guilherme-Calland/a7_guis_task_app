@@ -2,16 +2,13 @@ import 'package:a7_guis_task_app/resources/resources.dart';
 import 'package:flutter/material.dart';
 
 class TitleScreen extends StatelessWidget {
-  const TitleScreen({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
         top: 80,
-        left: 40
+        left: 40,
+        bottom: 40
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,7 +39,6 @@ class TitleScreen extends StatelessWidget {
               fontSize: 20
             ),
           ),
-          SizedBox(height: 40)
         ],
       ),
     );
