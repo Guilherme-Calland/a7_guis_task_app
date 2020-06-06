@@ -8,16 +8,20 @@
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
-        "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/drawable/notification_icon_background.xml"
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/layout_notification_action.xml.flat",
+        "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout/notification_action.xml"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/layout_notification_action.xml.flat",
-        "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout/notification_action.xml"
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
+        "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -64,12 +68,20 @@
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
@@ -86,6 +98,10 @@
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
@@ -106,6 +122,10 @@
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -134,6 +154,10 @@
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
         "source": "/home/gui/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/gui/flutter-projects/a7_guis_task_app/android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",

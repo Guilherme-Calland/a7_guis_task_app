@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main(){
+main(){
   runApp(MaterialApp(
     home: Home(),
-    debugShowCheckedModeBanner: false,
   ));
 }
 
@@ -16,7 +15,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("Gui's Task App"))
+      body: Center(
+        child: Text('oi')
+      )
     );
   }
 }
