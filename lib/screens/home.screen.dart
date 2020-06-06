@@ -8,9 +8,31 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: guisTaskAppTheme,
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           TitleScreen(),
-          
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.only(
+                top: 10, left: 20
+              ),
+              color: Colors.white,
+              child: Column(
+                children: <Widget>[
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: 50,
+                      itemBuilder: (context, index){
+                        return ListTile(
+                          title: Text('test'),
+                        );
+                      },
+                    )
+                  )
+                ],
+              ),
+            )
+          )
         ],
       )
     );
