@@ -1,4 +1,5 @@
 import 'package:a7_guis_task_app/resources/resources.dart';
+import 'package:a7_guis_task_app/widgets/add.task.dialog.dart';
 import 'package:flutter/material.dart';
 
 class Gui extends StatelessWidget {

@@ -2,6 +2,7 @@ import 'package:a7_guis_task_app/resources/resources.dart';
 import 'package:flutter/material.dart';
 
 class AddTaskDialog extends StatelessWidget {
+  var taskController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -28,7 +29,7 @@ class AddTaskDialog extends StatelessWidget {
             ),
             SizedBox(height: 10),
             TextField(
-              // controller: ,
+              controller: taskController,
               autofocus: true,
             ),
             SizedBox(
@@ -50,11 +51,19 @@ class AddTaskDialog extends StatelessWidget {
                   fontWeight: FontWeight.w900
                 ),
               ),
-              onPressed: (){},
+              onPressed: (){
+                createTask();
+                return Navigator.pop(context);
+              },
             )
           ],
         )
       )
     );
+  }
+
+  createTask(){
+    String task = taskController.text;
+    print(task);
   }
 }
