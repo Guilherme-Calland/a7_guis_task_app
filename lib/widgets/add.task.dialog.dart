@@ -64,6 +64,6 @@ class AddTaskDialog extends StatelessWidget {
 
   createTask(){
     String task = taskController.text;
-    print(task);
+    
   }
 }
