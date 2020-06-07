@@ -1,4 +1,5 @@
 import 'package:a7_guis_task_app/widgets/gui.dart';
+import 'package:a7_guis_task_app/widgets/task.list.dart';
 import 'package:flutter/material.dart';
 
 class TaskScreen extends StatelessWidget {
@@ -19,16 +20,7 @@ class TaskScreen extends StatelessWidget {
         ),
         child: Row(
           children: <Widget>[
-            Expanded(
-              child: ListView.builder(
-                itemCount: 50,
-                itemBuilder: (context, index){
-                  return ListTile(
-                    title: Text('test'),
-                  );
-                },
-              )
-            ),
+            TaskList(),
             Gui(),
           ],
         ),

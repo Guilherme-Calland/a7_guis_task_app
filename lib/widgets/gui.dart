@@ -1,6 +1,8 @@
 import 'package:a7_guis_task_app/resources/resources.dart';
+import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
 import 'package:a7_guis_task_app/widgets/add.task.dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Gui extends StatelessWidget {
   @override
@@ -10,7 +12,11 @@ class Gui extends StatelessWidget {
       child: Transform.scale(
         scale: 2,
         child: MaterialButton(
-          child: Image.asset('assets/gui.left.png'),
+          child: Consumer<GuisTasksData>(
+            builder: (context, data, child){
+              return Image.asset(data.image);
+            }
+          ),
           onPressed: (){
             print('pressed on guilherme');
             showDialog(
