@@ -26,16 +26,7 @@ class DatabaseHelper{
     return db;
   }
 
-  // _onCreate(Database db, int version) async{
-  //   String sql = 'CREATE TABLE tasks ('
-  //   'id INTEGER ṔRIMARY KEY AUTOINCREMENT, '
-  //   'name VARCHAR, '
-  //   'date DATETIME '
-  //   ')';
-  //   await db.execute(sql);
-  // }
-
-    _onCreate(Database db, int version) async {
+  _onCreate(Database db, int version) async {
     String sql = 'CREATE TABLE tasks('
     'id INTEGER PRIMARY KEY AUTOINCREMENT, '
     'name VARCHAR, '
@@ -44,11 +35,12 @@ class DatabaseHelper{
     await db.execute(sql);
   }
 
-
   create(Map<String, dynamic> data) async {
     var db = await database;
     int result = await db.insert('tasks', data);
     return result;
   }
+
+  
 
 }
