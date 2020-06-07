@@ -1,8 +1,11 @@
+import 'package:a7_guis_task_app/database/databasehelper.dart';
+import 'package:a7_guis_task_app/model/task.dart';
 import 'package:a7_guis_task_app/resources/resources.dart';
 import 'package:flutter/material.dart';
 
 class AddTaskDialog extends StatelessWidget {
   var taskController = TextEditingController();
+  var database = DatabaseHelper();
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -62,8 +65,12 @@ class AddTaskDialog extends StatelessWidget {
     );
   }
 
-  createTask(){
-    String task = taskController.text;
-    
+  createTask() async{
+    String name = taskController.text;
+    String date = DateTime.now().toString();
+    Task task = Task(name, date);
+    Map taskData = task.toMap();
+    int result = await database.create(taskData);
+    print('created task of id: $result');
   }
 }

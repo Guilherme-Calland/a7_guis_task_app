@@ -12,7 +12,7 @@ class Gui extends StatelessWidget {
         child: MaterialButton(
           child: Image.asset('assets/gui.left.png'),
           onPressed: (){
-            print('test');
+            print('pressed on guilherme');
             showDialog(
               context: context,
               builder: (context) => Column(
