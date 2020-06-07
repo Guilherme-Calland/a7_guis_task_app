@@ -5,12 +5,12 @@ class Task{
   Task(this.name, this.date);
   
   toMap(){
-    Map map = {
+    Map<String, dynamic> map = {
       'name' : this.name,
       'date' : this.date
     };
     if(id != null){
-      map[id] = this.id;
+      map['id'] = this.id;
     }
     return map;
   }

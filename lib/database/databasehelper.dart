@@ -2,7 +2,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
 class DatabaseHelper{
-  static DatabaseHelper _databaseHelper = DatabaseHelper._internal();
+  static final DatabaseHelper _databaseHelper = DatabaseHelper._internal();
   factory DatabaseHelper(){
     return _databaseHelper;
   }
@@ -21,22 +21,34 @@ class DatabaseHelper{
 
   _initializeDatabase() async {
     final path = await getDatabasesPath();
-    final file = join(path, 'dabaseGuisTasks.db');
+    final file = join(path, 'data_base_tasks.db');
     final db = await openDatabase(file, version: 1, onCreate: _onCreate);
     return db;
   }
 
-  _onCreate(Database db, int version) async{
-    String sql = 'CREATE TABLE tasks ('
-    'id INTEGER ṔRIMARY KEY AUTOINCREMENT, '
+  // _onCreate(Database db, int version) async{
+  //   String sql = 'CREATE TABLE tasks ('
+  //   'id INTEGER ṔRIMARY KEY AUTOINCREMENT, '
+  //   'name VARCHAR, '
+  //   'date DATETIME '
+  //   ')';
+  //   await db.execute(sql);
+  // }
+
+    _onCreate(Database db, int version) async {
+    String sql = 'CREATE TABLE tasks('
+    'id INTEGER PRIMARY KEY AUTOINCREMENT, '
     'name VARCHAR, '
-    'data DATETIME '
+    'date DATETIME '
     ')';
     await db.execute(sql);
   }
 
-  create(Map data){
-    print('criou');
+
+  create(Map<String, dynamic> data) async {
+    var db = await database;
+    int result = await db.insert('tasks', data);
+    return result;
   }
 
 }

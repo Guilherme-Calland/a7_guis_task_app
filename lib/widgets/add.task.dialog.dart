@@ -69,7 +69,7 @@ class AddTaskDialog extends StatelessWidget {
     String name = taskController.text;
     String date = DateTime.now().toString();
     Task task = Task(name, date);
-    Map taskData = task.toMap();
+    Map<String, dynamic> taskData = task.toMap();
     int result = await database.create(taskData);
     print('created task of id: $result');
   }
