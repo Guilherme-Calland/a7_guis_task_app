@@ -83,6 +83,7 @@ class AddTaskDialog extends StatelessWidget {
                   updatedTask.name = name;
                   Provider.of<GuisTasksData>(context, listen: false).updateTask(updatedTask);
                 }
+                Provider.of<GuisTasksData>(context, listen: false).changeImageToNormal();
                 return Navigator.pop(context);
               },
             )

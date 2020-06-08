@@ -7,14 +7,14 @@ import 'package:provider/provider.dart';
 class Gui extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Transform.translate(
-      offset: Offset(-39, 170),
-      child: Transform.scale(
-        scale: 2,
+    return Transform.scale(
+      scale: 2.5,
+      child: Transform.translate(
+        offset: Offset(-24, 50),
         child: MaterialButton(
           child: Consumer<GuisTasksData>(
             builder: (context, data, child){
-              return Image.asset(data.image);
+              return data.image;
             }
           ),
           onPressed: (){
@@ -30,7 +30,7 @@ class Gui extends StatelessWidget {
               )
             );
           },
-        )
+        ),
       ),
     );
   }

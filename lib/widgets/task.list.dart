@@ -18,6 +18,7 @@ class TaskList extends StatelessWidget {
                 title: Text(task.name),
                 onTap: () async {
                   data.deleteTask(task.id);
+                  data.changeImageToThumbsUp();
                 },
                 onLongPress: () async {
                   showDialog(

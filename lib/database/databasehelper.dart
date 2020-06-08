@@ -43,7 +43,7 @@ class DatabaseHelper{
 
   read() async {
     var db = await database;
-    String sql = 'SELECT * FROM tasks ORDER BY date DESC';
+    String sql = 'SELECT * FROM tasks ORDER BY id DESC';
     List< Map<String, dynamic> > rawData = await db.rawQuery( sql );
     return rawData;
   }

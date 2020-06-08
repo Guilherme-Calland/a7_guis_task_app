@@ -11,10 +11,18 @@ class GuisTasksData extends ChangeNotifier{
     new Task(name: 'clean room')
   ];
 
-  String image = 'assets/gui.left.png';
+  Image image = guiNormal;
+  static Image guiNormal = Image.asset('assets/gui.left.png', gaplessPlayback: true);
+  static Image guiThumbsUp = Image.asset('assets/gui.left.thumbsUp.png', gaplessPlayback: true);
 
-  printTest(){
-    print('test');
+  changeImageToNormal(){
+    image = guiNormal;
+    notifyListeners();
+  }
+
+  changeImageToThumbsUp(){
+    image = guiThumbsUp;
+    notifyListeners();
   }
 
   createTask(Task task) async{

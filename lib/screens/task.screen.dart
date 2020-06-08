@@ -23,7 +23,7 @@ class TaskScreen extends StatelessWidget {
         child: Row(
           children: <Widget>[
             TaskList(),
-            Gui(),
+            // Gui(),
           ],
         ),
       )
