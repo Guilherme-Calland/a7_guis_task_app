@@ -12,9 +12,14 @@ class TaskList extends StatelessWidget {
           return ListView.builder(
             itemCount: data.tasks.length,
             itemBuilder: (context, index){
-              String task = data.tasks[index].name;
+              Task task = data.tasks[index];
               return ListTile(
-                title: Text(task),
+                title: Text(task.name),
+                onTap: () async {
+                  int result = await data.deleteTask(task.id);
+                  print('deleted task id: $result');
+                  data.readTasks();
+                }
               );
             },
           );

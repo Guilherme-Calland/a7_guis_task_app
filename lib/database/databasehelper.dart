@@ -48,4 +48,13 @@ class DatabaseHelper{
     return rawData;
   }
 
+  delete(int id) async {
+    var db = await database;
+    return await db.delete(
+      'tasks',
+      where: 'id = ?',
+      whereArgs: [id]
+    );
+  }
+
 }

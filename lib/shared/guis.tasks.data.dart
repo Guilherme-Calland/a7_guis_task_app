@@ -17,7 +17,7 @@ class GuisTasksData extends ChangeNotifier{
     print('test');
   }
 
-  readTasks() async{
+  readTasks() async {
     List< Map< String, dynamic> > rawDataList = await database.read();
     List< Task > tempTasks = List< Task >();
     for(Map<String, dynamic> rawData in rawDataList){
@@ -26,6 +26,11 @@ class GuisTasksData extends ChangeNotifier{
     }
     tasks = tempTasks;
     notifyListeners();
+  }
+
+  deleteTask(int id) async {
+    int result = await database.delete(id);
+    return result;
   }
 
 }
