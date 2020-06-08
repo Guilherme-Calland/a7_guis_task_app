@@ -25,7 +25,7 @@ class Gui extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   SizedBox(height: 200,),
-                  AddTaskDialog()
+                  AddTaskDialog(addOrChange: "Add")
                 ],
               )
             );

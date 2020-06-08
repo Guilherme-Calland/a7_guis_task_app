@@ -6,8 +6,17 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class AddTaskDialog extends StatelessWidget {
-  var taskController = TextEditingController();
-  var database = DatabaseHelper();
+  final taskController = TextEditingController();
+  final database = DatabaseHelper();
+  final Task updatedTask;
+  final String addOrChange;
+
+  AddTaskDialog({this.addOrChange, this.updatedTask}){
+    if(updatedTask!=null){
+      taskController.text = updatedTask.name;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -24,7 +33,7 @@ class AddTaskDialog extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-              'Add Task',
+              '$addOrChange Task',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: guisTaskAppTheme,
@@ -58,15 +67,17 @@ class AddTaskDialog extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10)
               ),
               child: Text(
-                'Add',
+                '$addOrChange',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w900
                 ),
               ),
               onPressed: (){
-                createTask();
-                Provider.of<GuisTasksData>(context, listen: false).readTasks();
+                String name = taskController.text;
+                String date = DateTime.now().toString();
+                Task task = Task(name : name, date: date);
+                Provider.of<GuisTasksData>(context, listen: false).createTask(task);
                 return Navigator.pop(context);
               },
             )
@@ -74,14 +85,5 @@ class AddTaskDialog extends StatelessWidget {
         )
       )
     );
-  }
-
-  createTask() async{
-    String name = taskController.text;
-    String date = DateTime.now().toString();
-    Task task = Task(name : name, date: date);
-    Map<String, dynamic> taskData = task.toMap();
-    int result = await database.create(taskData);
-    print('created task of id: $result');
   }
 }

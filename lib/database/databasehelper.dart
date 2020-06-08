@@ -48,13 +48,23 @@ class DatabaseHelper{
     return rawData;
   }
 
+  update(Map< String, dynamic > data) async {
+    var db = await database;
+    int result = await db.update(
+      'tasks', data,
+      where: 'id = ?',
+      whereArgs: [data['id']]
+    );
+    return result;
+  }
+
   delete(int id) async {
     var db = await database;
-    return await db.delete(
+    int result = await db.delete(
       'tasks',
       where: 'id = ?',
       whereArgs: [id]
     );
+    return result;
   }
-
 }
