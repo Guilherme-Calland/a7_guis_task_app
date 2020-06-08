@@ -74,10 +74,15 @@ class AddTaskDialog extends StatelessWidget {
                 ),
               ),
               onPressed: (){
-                String name = taskController.text;
-                String date = DateTime.now().toString();
-                Task task = Task(name : name, date: date);
-                Provider.of<GuisTasksData>(context, listen: false).createTask(task);
+                  String name = taskController.text;
+                  String date = taskController.text;
+                if(updatedTask == null){ //creating a new task
+                  Task task = Task(name : name, date: date);
+                  Provider.of<GuisTasksData>(context, listen: false).createTask(task);
+                }else{ //updating an existing task
+                  updatedTask.name = name;
+                  Provider.of<GuisTasksData>(context, listen: false).updateTask(updatedTask);
+                }
                 return Navigator.pop(context);
               },
             )

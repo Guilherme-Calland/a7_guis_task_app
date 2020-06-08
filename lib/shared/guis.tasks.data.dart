@@ -37,13 +37,13 @@ class GuisTasksData extends ChangeNotifier{
 
   updateTask(Task task) async{
     int result = await database.update(task.toMap());
+    print('tasks updated: $result');
     readTasks();
-    return result;
   }
 
   deleteTask(int id) async {
     int result = await database.delete(id);
+    print('number of deleted tasks: $result');
     readTasks();
-    return result;
   }
 }

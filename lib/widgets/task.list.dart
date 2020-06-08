@@ -17,8 +17,7 @@ class TaskList extends StatelessWidget {
               return ListTile(
                 title: Text(task.name),
                 onTap: () async {
-                  int result = await data.deleteTask(task.id);
-                  print('number of deleted tasks: $result');
+                  data.deleteTask(task.id);
                 },
                 onLongPress: () async {
                   showDialog(
