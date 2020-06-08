@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             TitleScreen(),
-            TaskScreen()
+            TaskScreen(),
           ],
         )
       ),

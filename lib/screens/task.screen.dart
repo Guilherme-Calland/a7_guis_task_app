@@ -1,6 +1,8 @@
+import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
 import 'package:a7_guis_task_app/widgets/gui.dart';
 import 'package:a7_guis_task_app/widgets/task.list.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class TaskScreen extends StatelessWidget {
   
@@ -21,6 +23,18 @@ class TaskScreen extends StatelessWidget {
         child: Row(
           children: <Widget>[
             TaskList(),
+            FlatButton(
+              color: Colors.green,
+              child: Text('Push',
+                style: TextStyle(
+                  color: Colors.white
+                ),
+              ),
+              onPressed: (){
+                Provider.of<GuisTasksData>(context, listen: false)
+                .readTask();
+              },
+            ),
             Gui(),
           ],
         ),
