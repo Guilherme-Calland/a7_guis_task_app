@@ -1,5 +1,7 @@
 import 'package:a7_guis_task_app/resources/resources.dart';
+import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class TitleScreen extends StatelessWidget {
   @override
@@ -32,13 +34,17 @@ class TitleScreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10),
-          Text(
-            '3 Tasks',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20
-            ),
-          ),
+          Consumer<GuisTasksData>(
+            builder: (context, data, child){
+              return Text(
+                '${data.tasks.length} Tasks',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20
+                ),
+              );
+            }
+          )
         ],
       ),
     );

@@ -30,13 +30,21 @@ class AddTaskDialog extends StatelessWidget {
                 fontWeight: FontWeight.w900
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 30),
             TextField(
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: guisTaskAppTheme,
+              ),
               controller: taskController,
               autofocus: true,
+              keyboardType: TextInputType.visiblePassword,
+              decoration: InputDecoration(
+                border: InputBorder.none
+              ),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             FlatButton(
               color: guisTaskAppTheme,
