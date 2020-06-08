@@ -1,7 +1,9 @@
 import 'package:a7_guis_task_app/database/databasehelper.dart';
 import 'package:a7_guis_task_app/model/task.dart';
 import 'package:a7_guis_task_app/resources/resources.dart';
+import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class AddTaskDialog extends StatelessWidget {
   var taskController = TextEditingController();
@@ -30,7 +32,7 @@ class AddTaskDialog extends StatelessWidget {
                 fontWeight: FontWeight.w900
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 25),
             TextField(
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -64,6 +66,7 @@ class AddTaskDialog extends StatelessWidget {
               ),
               onPressed: (){
                 createTask();
+                Provider.of<GuisTasksData>(context, listen: false).readTasks();
                 return Navigator.pop(context);
               },
             )

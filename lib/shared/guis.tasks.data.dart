@@ -17,7 +17,7 @@ class GuisTasksData extends ChangeNotifier{
     print('test');
   }
 
-  readTask() async{
+  readTasks() async{
     List< Map< String, dynamic> > rawDataList = await database.read();
     List< Task > tempTasks = List< Task >();
     for(Map<String, dynamic> rawData in rawDataList){

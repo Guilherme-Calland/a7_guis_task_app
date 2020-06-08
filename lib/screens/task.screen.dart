@@ -23,18 +23,6 @@ class TaskScreen extends StatelessWidget {
         child: Row(
           children: <Widget>[
             TaskList(),
-            FlatButton(
-              color: Colors.green,
-              child: Text('Push',
-                style: TextStyle(
-                  color: Colors.white
-                ),
-              ),
-              onPressed: (){
-                Provider.of<GuisTasksData>(context, listen: false)
-                .readTask();
-              },
-            ),
             Gui(),
           ],
         ),
