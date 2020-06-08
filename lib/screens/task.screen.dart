@@ -10,12 +10,7 @@ class TaskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        child: Row(
-          children: <Widget>[
-            TaskList(),
-            Gui()
-          ],
-        ),
+        padding: EdgeInsets.only(left: 22),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
@@ -23,8 +18,11 @@ class TaskScreen extends StatelessWidget {
             topRight: Radius.circular(20)
           )
         ),
-        padding: EdgeInsets.only(
-          left: 22
+        child: Row(
+          children: <Widget>[
+            TaskList(),
+            Gui(),
+          ],
         ),
       ),
     );

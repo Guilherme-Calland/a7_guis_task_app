@@ -12,6 +12,7 @@ class Gui extends StatelessWidget {
       child: Transform.translate(
         offset: Offset(-24, 50),
         child: MaterialButton(
+          minWidth: 0,
           child: Consumer<GuisTasksData>(
             builder: (context, data, child){
               return data.image;
