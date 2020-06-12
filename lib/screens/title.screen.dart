@@ -1,5 +1,6 @@
 import 'package:a7_guis_task_app/resources/resources.dart';
 import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
+import 'package:a7_guis_task_app/widgets/gui.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,20 +10,24 @@ class TitleScreen extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(
         top: 80,
-        left: 40,
+        left: 58,
         bottom: 40
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CircleAvatar(
-            backgroundColor: Colors.white,
-            radius: 30,
-            child: Icon(
-              Icons.list,
-              size: 30,
-              color: guisTaskAppTheme
-            )
+          Row(
+            children: <Widget>[
+              CircleAvatar(
+                backgroundColor: Colors.white,
+                radius: 30,
+                child: Icon(
+                  Icons.list,
+                  size: 30,
+                  color: guisTaskAppTheme
+                )
+              ),
+            ],
           ),
           SizedBox(height: 20),
           Text(

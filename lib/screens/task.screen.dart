@@ -1,8 +1,6 @@
-import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
 import 'package:a7_guis_task_app/widgets/gui.dart';
 import 'package:a7_guis_task_app/widgets/task.list.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class TaskScreen extends StatelessWidget {
   
@@ -10,7 +8,7 @@ class TaskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: EdgeInsets.only(left: 22),
+        padding: EdgeInsets.only(left: 58, right: 20),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(

@@ -8,10 +8,11 @@ class Gui extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.scale(
-      scale: 2.5,
+      scale: 3,
       child: Transform.translate(
-        offset: Offset(-24, 50),
+        offset: Offset(-10, 45),
         child: MaterialButton(
+          padding: EdgeInsets.all(0),
           minWidth: 0,
           child: Consumer<GuisTasksData>(
             builder: (context, data, child){

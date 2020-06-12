@@ -20,7 +20,7 @@ class GuisTasks extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(
         cursorColor: guisTaskAppTheme,
-        primarySwatch: Colors.purple
+        primarySwatch: Colors.purple,
         ),
         debugShowCheckedModeBanner: false,
         home: HomeScreen(),
