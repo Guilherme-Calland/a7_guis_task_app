@@ -21,9 +21,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: 'dev_assets/gui.png'
-  adaptive_icon_background: '#ceb1ff'
-  adaptive_icon_foreground: 'dev_assets/gui-adaptive.png'
+  image_path: 'dev_assets/gui.icon.png'
 
 flutter:
 

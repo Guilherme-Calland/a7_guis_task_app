@@ -111,7 +111,7 @@
     },
     {
       "name": "provider",
-      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/provider-4.1.3",
+      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/provider-4.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -135,13 +135,13 @@
     },
     {
       "name": "sqflite",
-      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.0+2",
+      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
     {
       "name": "sqflite_common",
-      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/sqflite_common-1.0.1",
+      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/sqflite_common-1.0.2+1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -165,9 +165,9 @@
     },
     {
       "name": "synchronized",
-      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0",
+      "rootUri": "file:///home/gui/.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0+2",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.8"
     },
     {
       "name": "term_glyph",
@@ -212,7 +212,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-06-10T18:12:53.950813Z",
+  "generated": "2020-07-16T21:06:04.388244Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }
