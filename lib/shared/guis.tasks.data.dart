@@ -15,6 +15,17 @@ class GuisTasksData extends ChangeNotifier{
   static Image guiNormal = Image.asset('assets/gui.left.png', gaplessPlayback: true);
   static Image guiThumbsUp = Image.asset('assets/gui.left.thumbsUp.png', gaplessPlayback: true);
 
+  static String order = "ASC";
+
+  changeOrder(){
+    if(order == "ASC"){
+      order = "DESC";
+    } else {
+      order = "ASC";
+    }
+    readTasks();
+  }
+
   changeImageToNormal(){
     image = guiNormal;
     notifyListeners();

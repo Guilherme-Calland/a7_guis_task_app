@@ -1,3 +1,4 @@
+import 'package:a7_guis_task_app/shared/guis.tasks.data.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -43,7 +44,7 @@ class DatabaseHelper{
 
   read() async {
     var db = await database;
-    String sql = 'SELECT * FROM tasks ORDER BY id DESC';
+    String sql = 'SELECT * FROM tasks ORDER BY id ${GuisTasksData.order}';
     List< Map<String, dynamic> > rawData = await db.rawQuery( sql );
     return rawData;
   }
