@@ -1,4 +1,4 @@
-#Thu Jul 16 18:23:53 BRT 2020
-base.0=/home/gui/flutter-projects/a7_guis_task_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Thu Jul 23 15:43:50 BRT 2020
+base.0=/home/gui/flutter-projects/task_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

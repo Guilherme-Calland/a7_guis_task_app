@@ -16,24 +16,20 @@ class TitleScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              FloatingActionButton(
-                onPressed: (){
-                  Provider.of<GuisTasksData>(context, listen: false).changeOrder();
-                },
-                elevation: 0,
-                child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 30,
-                  child: Icon(
-                    Icons.list,
-                    size: 30,
-                    color: guisTaskAppTheme
-                  )
-                ),
-              ),
-            ],
+          FloatingActionButton(
+            onPressed: (){
+              Provider.of<GuisTasksData>(context, listen: false).changeOrder();
+            },
+            elevation: 0,
+            child: CircleAvatar(
+              backgroundColor: Colors.white,
+              radius: 30,
+              child: Icon(
+                Icons.list,
+                size: 30,
+                color: guisTaskAppTheme
+              )
+            ),
           ),
           SizedBox(height: 20),
           Text(
